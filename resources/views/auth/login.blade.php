@@ -1,5 +1,10 @@
 <div>
     <h1>Login</h1>
 
-    <div></div>
+    <form action="/login" method="post">
+        @csrf
+        <input name="email" placeholder="Email" value="{{ old('email') }}">
+        <input name="password" type="password" placeholder="Senha">
+        <button>Logar</button>
+    </form>
 </div>
